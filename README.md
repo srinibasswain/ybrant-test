@@ -41,13 +41,16 @@ docker run --name myjenkins-container -p 8080:8080 -p 60000:60000 -v /var/jenkin
 Open the  web browser and type localhost:8080 to access the Jenkins application:
 
 
-image.png
+![image](https://github.com/srinibasswain/ybrant-test/assets/51942428/34fdb559-82d4-48e6-9e53-be3aa29c5c7e)
+
 
 We can get the password by logging in to the conatiner i.e docker exec and in the path var/jenkins_home/secrets/intialpassword
 
-image.png
+![image](https://github.com/srinibasswain/ybrant-test/assets/51942428/52cdaaa4-5b1f-4ac8-90ce-822b98b2023e)
 
-image.png
+
+![image](https://github.com/srinibasswain/ybrant-test/assets/51942428/619324a5-689b-4de2-9461-322682a6ea22)
+
 
 
 step -2
@@ -55,13 +58,16 @@ step -2
 Install Docker Pipeline Plugin
 
 
-image.png
+![image](https://github.com/srinibasswain/ybrant-test/assets/51942428/31128314-61f4-4c48-b7e3-3f3a3328d9ac)
+
 
 step -3
 
 Install Kubernetes Plugin
 
-image.png
+![image](https://github.com/srinibasswain/ybrant-test/assets/51942428/14c1debf-7488-42dc-8750-721a56684af0)
+
+
 
 The Docker pipeline will enable to integrate Kubernetes with Jenkins. With the Kubernetes plugin, we can deploy the containerized application to the Kubernetes cluster using CI/CD Jenkins Pipeline.
 
@@ -77,7 +83,8 @@ step-6
 
 Installing sonarQube and configurating the webhook by generating the Token.
 
-image.png
+![image](https://github.com/srinibasswain/ybrant-test/assets/51942428/9e898086-da3e-4eda-bbf6-10b85ea89e9f)
+
 
 step-7
 
