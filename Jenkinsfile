@@ -14,11 +14,11 @@ pipeline {
       }
     }
 
-  stage('Sonarqube') {
+    stage('Sonarqube') {
     environment {
         scannerHome = tool 'SonarQubeScanner'
     }
-    steps {
+      steps {
         withSonarQubeEnv('sonarqube') {
             sh "${scannerHome}/bin/sonar-scanner"
         }
@@ -29,7 +29,7 @@ pipeline {
 }
 
 
-    stage('Build image') {
+     stage('Build image') {
       steps{
         script {
           dockerImage = docker.build dockerimagename
@@ -38,13 +38,16 @@ pipeline {
     }
 
 
-   stage('Scan') {
+     stage('Scan') {
             steps {
                 // Install trivy
                 sh 'curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin v0.18.3'
                 sh 'curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/html.tpl > html.tpl'
 
                 sh 'trivy --no-progress --exit-code 1 --severity HIGH,CRITICAL swainsrinibas/node-app'
+
+            }
+     }
 
 
     stage('Pushing Image') {
@@ -60,7 +63,7 @@ pipeline {
       }
     }
     stage('Deploying node.js container to Kubernetes') {
-      steps {
+       steps {
         script {
           kubernetesDeploy(configs: "deployment.yaml", "service.yaml")
         }
