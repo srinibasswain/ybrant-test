@@ -8,7 +8,7 @@ pipeline {
     stage('Checkout Source') {
       steps {
         git branch: 'main',
-            credentialsId: 'github_credentials',
+            credentialsId: 'github-credentials',
             url: 'https://github.com/srinibasswain/ybrant-test.git'
 
       }
