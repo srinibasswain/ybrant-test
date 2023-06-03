@@ -116,7 +116,8 @@ step-14
 
 Configure the github source code reposiatry with jenkins.
 
-image.png
+![image](https://github.com/srinibasswain/ybrant-test/assets/51942428/1d4c5522-cfd6-4b52-b159-245d41b0a114)
+
 
 ![image](https://github.com/srinibasswain/ybrant-test/assets/51942428/8018db32-6147-4901-83f5-1f83e903a468)
 
