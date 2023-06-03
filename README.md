@@ -1,7 +1,7 @@
                                   JENKINS CI/CD PIPELINE
 
 
-This priject will show us  how to deploy a simple containerized  node.js application to the Kubernetes cluster(minikube) using Jenkins CI/CD Pipeline. Jenkins is one of the most popular continuous integration/continuous delivery and deployment (CI/CD) automation platforms. 
+This project will show us  how to deploy a simple containerized  node.js application to the Kubernetes cluster(minikube) using Jenkins CI/CD Pipeline. Jenkins is one of the most popular continuous integration/continuous delivery and deployment (CI/CD) automation platforms. 
 
 We will use Jenkins CI/CD Pipeline with multiple stages to deploy the simple containerized application.
 
@@ -118,7 +118,8 @@ Configure the github source code reposiatry with jenkins.
 
 image.png
 
-image.png
+![image](https://github.com/srinibasswain/ybrant-test/assets/51942428/8018db32-6147-4901-83f5-1f83e903a468)
+
 
 
 step-15
